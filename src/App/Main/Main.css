@@ -1,0 +1,9 @@
+.main {
+  width: 70%;
+  padding: 1em;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: whitesmoke;
+}
