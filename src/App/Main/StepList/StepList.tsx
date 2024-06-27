@@ -1,7 +1,9 @@
 import "./StepList.css";
 import Step from "./Step/Step.tsx";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import StepText from "./StepText/StepText.tsx";
+import NavButtonList from "./NavButtonList/NavButtonList.tsx";
+
 type StepListProps = {
   steps: Array<string>;
 };
@@ -25,6 +27,10 @@ function StepList({ steps }: StepListProps) {
       <ul className="step--list">{allSteps}</ul>
       <StepText
         text={`Step ${activeStepNumber}: ${steps[activeStepNumber - 1]}`}
+      />
+      <NavButtonList
+        setActiveStep={setActiveStep}
+        numberOfSteps={steps.length}
       />
     </>
   );
