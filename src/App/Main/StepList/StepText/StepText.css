@@ -1,3 +1,4 @@
 .step--text {
   align-self: center;
+  margin: inherit;
 }

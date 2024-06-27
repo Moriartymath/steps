@@ -4,14 +4,19 @@ import "./Step.css";
 type StepProps = {
   number: number;
   isActive: boolean;
+  setActiveStep: React.Dispatch<React.SetStateAction<number>>;
 };
-const Step: React.FC<StepProps> = function ({ number, isActive }) {
-  const [currentActive, setActive] = React.useState(isActive);
-
+const Step: React.FC<StepProps> = function ({
+  number,
+  isActive,
+  setActiveStep,
+}) {
   return (
     <li
-      onClick={() => (!currentActive ? setActive(true) : "")}
-      className={`list--item${currentActive ? " active" : ""}`}
+      onClick={() => {
+        setActiveStep(number);
+      }}
+      className={`list--item${isActive ? " active" : ""}`}
     >
       <span>{number}</span>
     </li>

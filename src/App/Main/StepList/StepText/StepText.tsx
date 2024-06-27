@@ -5,7 +5,7 @@ type StepTextProps = {
   text: string;
 };
 const StepText: React.FC<StepTextProps> = function ({ text }) {
-  return <h2 className="step--text">{text}</h2>;
+  return <h3 className="step--text">{text}</h3>;
 };
 
 export default StepText;

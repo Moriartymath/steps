@@ -1,9 +1,10 @@
 .main {
   width: 70%;
   padding: 1em;
-  border: 2px solid black;
   display: flex;
+  border: 2px solid gainsboro;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 3em;
   background: whitesmoke;
+  font-size: 1.2rem;
 }

@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;400&display=swap");
+
+.fira-sans-condensed-extralight {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 :root {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Fira Sans Condensed", sans-serif;
 }
