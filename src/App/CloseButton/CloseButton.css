@@ -1,0 +1,8 @@
+.button--close {
+  align-self: flex-end;
+  font-size: 1.5em;
+}
+
+.button--close::after {
+  content: "\00d7";
+}

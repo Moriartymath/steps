@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import "./Main.css";
 
 import StepList from "./StepList/StepList.tsx";
+type MainProps = {
+  closed: boolean;
+};
 
 const steps = [
   "Learn React 🤓",
@@ -9,9 +12,9 @@ const steps = [
   "Invest your new income 🥳",
 ];
 
-function Main() {
+function Main({ closed }: MainProps) {
   return (
-    <main className="main">
+    <main className="main" style={{ display: closed ? "none" : "flex" }}>
       <StepList steps={steps} />
     </main>
   );

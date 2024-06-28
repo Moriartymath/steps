@@ -13,9 +13,7 @@ const Step: React.FC<StepProps> = function ({
 }) {
   return (
     <li
-      onClick={() => {
-        setActiveStep(number);
-      }}
+      onClick={() => setActiveStep(number)}
       className={`list--item${isActive ? " active" : ""}`}
     >
       <span>{number}</span>
